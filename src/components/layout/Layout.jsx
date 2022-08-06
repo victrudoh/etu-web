@@ -3,6 +3,7 @@ import React from "react";
 // Components
 import MainRouter from "../Routes";
 import Navbar from "../navbar/Navbar";
+import Footer from "../footer/Footer";
 
 // Styles
 import { LayoutStyle } from "./Layout.Styles";
@@ -13,6 +14,7 @@ const Layout = () => {
       <LayoutStyle>
         <Navbar />
         <MainRouter />
+        <Footer />
       </LayoutStyle>
     </>
   );
