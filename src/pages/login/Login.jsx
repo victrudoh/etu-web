@@ -1,5 +1,5 @@
 import React, { useState, useContext } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, NavLink } from "react-router-dom";
 import axios from "axios";
 // import { success, error } from "../../helpers/Alert";
 import { success, error } from "../../helpers/Alert";
@@ -108,7 +108,10 @@ const Login = () => {
                 <label>Password</label>
               </div>
               {/* <button className="loginButton" type="submit"> */}
-              <button className="loginButton">Login</button>
+              <NavLink className=" btn btn-info loginButton" to="/">
+                Login
+              </NavLink>
+              {/* <button className="loginButton">Login</button> */}
             </form>
           </div>
         )}
