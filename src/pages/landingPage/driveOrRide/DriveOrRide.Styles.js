@@ -35,6 +35,12 @@ export const Wrapper = styled.div`
     padding: 7rem;
     transition: all 300ms ease-in;
 
+    &:hover {
+      background-color: var(--text-white);
+      color: var(--primary-color);
+      border-radius: var(--border-radius);
+    }
+
     // PC - 1024
     @media only screen and (min-width: 992px) and (max-width: 1199px) {
       padding: 5rem 1rem;

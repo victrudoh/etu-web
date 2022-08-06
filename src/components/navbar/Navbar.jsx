@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 // styles
 import { Wrapper } from "./Navbar.Styles";
@@ -24,32 +25,32 @@ const Navbar = () => {
             <div className="collapse navbar-collapse" id="navbarNav">
               <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink to="/" className="nav-link">
                     Home
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink to="/user/wallet" className="nav-link">
                     Wallet
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink to="/user/card" className="nav-link">
                     Card
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
+                  <NavLink to="/user/profile" className="nav-link">
                     Profile
-                  </a>
+                  </NavLink>
                 </li>
                 <li className="nav-item">
-                  <a
+                  <NavLink
+                    to="/login"
                     className="nav-link btn btn-info btn-outline-secondary br- text-white mx-3"
-                    href="#"
                   >
                     Create Account
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
